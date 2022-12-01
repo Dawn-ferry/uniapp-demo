@@ -84,7 +84,7 @@
 			updateUserInfo(){ //向后台更新信息
         if(this.code){
             uni.request({
-            url: 'http://192.168.1.158:8080/wechat/base/login', 
+            url: 'https://runjava.1lesson.cn/wechat/base/login', 
             data: {
                 code:this.code,
                 type:0,

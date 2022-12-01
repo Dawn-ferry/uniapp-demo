@@ -11,66 +11,7 @@
         </view>
       </view>
     </view>
-    <view class="functional-layer">
-      <view class="layer-item">
-        <image src="https://image.ijobway.com/27_sxgl/icon/icon_07.png" style=" width: 48px;
-      height: 48px;" />
-        <view class="tips">我的导师</view>
-      </view>
-      <view class="layer-item">
-        <image src="https://image.ijobway.com/27_sxgl/icon/icon_02.png" style=" width: 48px;
-      height: 48px;" />
-        <view class="tips">我的成绩</view>
-      </view>
-      <view class="layer-item">
-        <image src="https://image.ijobway.com/27_sxgl/icon/icon_01.png" style=" width: 48px;
-      height: 48px;" />
-        <view class="tips">毕业设计</view>
-      </view>
-    </view>
-    <view class="integral">
-      <view class="tips">
-        <view class="title">您有一份实习总结待完成</view>
-        <view class="txt">恭喜您，经过XX天奋战，您已经顺利完成实习</view>
-      </view>
-      <view class="btn">填写报告</view>
-    </view>
-    <view class="my-footer">
-      <view class="item" @click="this.openpdf(1)">
-        <view class="instruction">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_04.png" style=" width: 24px;
-      height: 24px;" />
-          <view class="tips">实习手册</view>
-        </view>
-        <view class="icon">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_06.png" style=" width: 24px;
-      height: 24px;" />
-        </view>
-      </view>
-
-      <view class="item" @click="this.openpdf(2)">
-        <view class="instruction">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_05.png" style=" width: 24px;
-      height: 24px;" />
-          <view class="tips">实习制度</view>
-        </view>
-        <view class="icon">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_06.png" style=" width: 24px;
-      height: 24px;" />
-        </view>
-      </view>
-      <view class="item">
-        <view class="instruction">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_03.png" style=" width: 24px;
-      height: 24px;" />
-          <view class="tips">个人资料</view>
-        </view>
-        <view class="icon">
-          <image src="https://image.ijobway.com/27_sxgl/icon/icon_06.png" style=" width: 24px;
-      height: 24px;" />
-        </view>
-      </view>
-    </view>
+    <view class="functional-layer">2</view>
   </view>
 </template>
 <script>

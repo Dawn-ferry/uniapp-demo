@@ -8,10 +8,11 @@
   },
   "pages": [
     {
-      "path": "pages/home/index",
+      "path": "pages/punchCard/index",
       "style": {
-        "navigationBarTitleText": "首页",
-        "navigationBarBackgroundColor": "#6D84FC"
+        "navigationBarTitleText": "打卡",
+        "navigationBarBackgroundColor": "#6D84FC",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -22,15 +23,53 @@
       }
     },
     {
-      "path": "pages/Authpage/index",
+      "path": "pages/home/index",
       "style": {
-        "navigationBarTitleText": "身份认证"
+        "navigationBarTitleText": "首页",
+        "navigationBarBackgroundColor": "#6D84FC",
+        "navigationBarTextStyle": "white"
       }
+    },
+    {
+      "path": "pages/map/index",
+      "style": {
+        "navigationBarTitleText": "map"
+      },
+      "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+        }
+      },
+      "requiredPrivateInfos": [
+        "getFuzzyLocation",
+        "getLocation",
+        "onLocationChange",
+        "startLocationUpdateBackground",
+        "chooseAddress"
+      ]
     },
     {
       "path": "pages/login/index",
       "style": {
         "navigationBarTitleText": "登陆"
+      }
+    },
+    {
+      "path": "components/personalData/index",
+      "style": {
+        "navigationBarTitleText": "个人资料"
+      }
+    },
+    {
+      "path": "components/pdfCom/index",
+      "style": {
+        "navigationBarTitleText": "实习手册"
+      }
+    },
+    {
+      "path": "pages/Authpage/index",
+      "style": {
+        "navigationBarTitleText": "身份认证"
       }
     },
     {

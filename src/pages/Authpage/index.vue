@@ -21,7 +21,7 @@ export default {
   components: {
     uniEasyinput
   },
-  name: 'Auth',
+  name: 'Author',
   data() {
     return {
       name: '',
@@ -30,7 +30,8 @@ export default {
   },
   methods: {
     loginFn() {
-      console.log('this.name', this.name)
+      let name = this.name
+      let number = this.number
       if (!this.name && !this.number) {
         uni.showToast({
           title: '姓名和学号不能为空',
@@ -41,19 +42,21 @@ export default {
       uni.login({
         provider: 'weixin',
         success: function (loginRes) {
+          console.log('this.name', name)
+          console.log('this.number', number)
+
           uni.request({
-            url: 'http://192.168.1.158:8080/wechat/base/login',
+            url: 'https://runjava.1lesson.cn/wechat/base/login',
             data: {
               code: loginRes.code,
               type: 1,
-              number: this.number,
-              name: this.name
+              number: number,
+              name: name
             },
             method: 'post',
             success: res => {
               // 存储token
               if (res.data.code === 200) {
-                // console.log('存储token', res.data)
                 uni.setStorageSync('token', res.data.token)
                 uni.switchTab({
                   url: '/pages/home/index'

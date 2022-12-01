@@ -1,7 +1,7 @@
 import { request } from './request.js'
 // const { tokenUrl, hasLogin, testUrl } = store.state
 
-let hostUrl = 'http://192.168.1.158:8080'
+let hostUrl = 'https://runjava.1lesson.cn/'
 /**
  * 登录
  * 解绑
