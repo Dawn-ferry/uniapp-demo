@@ -8,18 +8,19 @@
   },
   "pages": [
     {
-      "path": "pages/punchCard/index",
+      "path": "components/myAttendance/index",
       "style": {
-        "navigationBarTitleText": "打卡",
+        "navigationBarTitleText": "我的考勤",
         "navigationBarBackgroundColor": "#6D84FC",
         "navigationBarTextStyle": "white"
       }
     },
     {
-      "path": "pages/my/index",
+      "path": "pages/punchCard/index",
       "style": {
-        "navigationBarTitleText": "个人中心",
-        "navigationBarBackgroundColor": "#6D84FC"
+        "navigationBarTitleText": "打卡",
+        "navigationBarBackgroundColor": "#6D84FC",
+        "navigationBarTextStyle": "white"
       }
     },
     {
@@ -31,13 +32,21 @@
       }
     },
     {
+      "path": "components/calendar/index",
+      "style": {
+        "navigationBarTitleText": "22",
+        "navigationBarBackgroundColor": "#6D84FC",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
       "path": "pages/map/index",
       "style": {
         "navigationBarTitleText": "map"
       },
       "permission": {
         "scope.userLocation": {
-          "desc": "你的位置信息将用于小程序位置接口的效果展示" // 高速公路行驶持续后台定位
+          "desc": "你的位置信息将用于小程序位置接口的效果展示"
         }
       },
       "requiredPrivateInfos": [
@@ -47,6 +56,13 @@
         "startLocationUpdateBackground",
         "chooseAddress"
       ]
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationBarBackgroundColor": "#6D84FC"
+      }
     },
     {
       "path": "pages/login/index",

@@ -8,7 +8,9 @@
         </view>
         <view class="clock">
             <image class="logo" src="https://image.ijobway.com/27_sxgl/icon/index_icon_02.png" style="margin-right:22rpx"></image>
-            <image class="logo" src="https://image.ijobway.com/27_sxgl/icon/index_icon_05.png"></image>
+            <image class="logo" src="https://image.ijobway.com/27_sxgl/icon/index_icon_05.png"
+            @click="goClock"
+            ></image>
         </view>
         <view class="task">
           <image  src="https://image.ijobway.com/27_sxgl/icon/index_icon_04.png" ></image>  
@@ -51,7 +53,12 @@ export default {
     return {  }
   },
   onLoad() {},
-  methods: {}
+  methods: {
+    goClock(){
+      console.log('goClock');
+      uni.navigateTo({url:'/pages/punchCard/index'})
+    }
+  }
 }
 </script>
 

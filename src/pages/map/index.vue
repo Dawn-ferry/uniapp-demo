@@ -112,6 +112,7 @@ export default {
       //直接调用即可
       console.log('getLocationInf1111o')
       var _this = this
+      //  getLocation
       uni.getLocation({
         type: 'wgs84',
         success: function (res) {
@@ -163,6 +164,7 @@ export default {
         header: {
           'Content-Type': 'application/text'
         },
+        // XOXBZ-MZWWD-CDX4H-PONXN-UA5PJ-D7FJN
         // OJZBZ-JL3LO-C5HWD-S5PV7-VILCJ-UXBKT
         url:
           'https://apis.map.qq.com/ws/geocoder/v1/?location=' +
